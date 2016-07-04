@@ -1,4 +1,5 @@
-FROM node:4.2.0
+# Set the base image
+FROM node
 
 # Install nodemon
 RUN npm install -g nodemon
