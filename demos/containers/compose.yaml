@@ -1,0 +1,64 @@
+version: '2'
+services:
+    nginx:
+        image: lordanubis3/nginx:v1
+        container_name: nginx
+        hostname: nginx
+        environment:
+             - PS1="`whoami`@`hostname`:`pwd`# "
+        #expose:
+        links:
+            - node1:node1
+            # - node2:node2
+            #- node3:node3
+        ports: 
+            - "80:80"
+        working_dir: /
+    node1:
+        image: lordanubis3/node:v1
+        container_name: node1
+        hostname: node1
+        environment:
+             - PS1="`whoami`@`hostname`:`pwd`# "
+        #expose:
+        links:
+            - redis:redis
+        ports: 
+            - "8080"
+    node2:
+        image: lordanubis3/node:v1
+        container_name: node2
+        hostname: node2
+        environment:
+             - PS1="`whoami`@`hostname`:`pwd`# "
+        #expose:
+        links:
+            - redis:redis
+        ports: 
+            - "8080"
+    node3:
+        image: lordanubis3/node:v1
+        container_name: node3
+        hostname: node3
+        environment:
+             - PS1="`whoami`@`hostname`:`pwd`# "
+        #expose:
+        links:
+            - redis:redis
+        ports: 
+            - "8080"
+    redis:
+        image: lordanubis3/redis:v1
+        container_name: redis
+        hostname: redis
+        environment:
+             - PS1="`whoami`@`hostname`:`pwd`# "
+        #expose:
+        # links:
+        #     - redis:redis
+        ports: 
+            - "6379"
+
+    
+        
+    
