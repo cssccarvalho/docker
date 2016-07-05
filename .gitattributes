@@ -11,4 +11,4 @@ Dockerfile eol=lf
 *.ctmpl=lf
 *.vmoptions=lf
 *.config=lf
-*.Vagrantfile
+Vagrantfile=eol=lf
