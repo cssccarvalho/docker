@@ -1,0 +1,14 @@
+*.js eol=lf
+*.md eol=lf
+*.sh eol=lf
+*.txt eol=lf
+*.json* eol=lf
+*.service eol=lf
+*.conf eol=lf
+Dockerfile eol=lf
+*.xml eol=lf
+*.cfg eol=lf
+*.ctmpl=lf
+*.vmoptions=lf
+*.config=lf
+*.Vagrantfile
