@@ -2,9 +2,13 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	config.vm.box = "blinkreaction/boot2docker"
 
-	config.vm.box_version = "1.9.0"
+	config.vm.box_version = "1.10.3"
+  	config.vm.box_check_update = true
 	config.vm.provider :virtualbox do |vb|
-	  vb.name = "docker_demo"
+		vb.gui = false  # Set to true for debugging. Will unhide VM's primary console screen.
+		vb.name = 'docker_demo' # Virtual box name VM
+		vb.memory = 1024  # Memory settings.
+		vb.cpus = 1  # CPU settings. VirtualBox works much better with a single CPU.	
 	end
 	#Vagrant -> Docker Synced Folders
 	

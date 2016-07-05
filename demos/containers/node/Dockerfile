@@ -1,5 +1,5 @@
 # Set the base image
-FROM node
+FROM node:6.2.2
 
 # Install nodemon
 RUN npm install -g nodemon
