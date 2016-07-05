@@ -11,9 +11,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	#Vagrant Provisioning
 	config.vm.provision :docker
 
-	#Vagrant Provisioning Plugin
-	#config.vm.provision :docker_compose, yml: "/vagrant/compose.yaml", run: "always"
-	
 	#VM Network Configurations
 	
 	#Aplications Foward Ports
