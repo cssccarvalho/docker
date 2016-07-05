@@ -1,8 +1,5 @@
 VAGRANTFILE_API_VERSION = "2"
 
-# Install required plugins if not present.
-
-
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	config.vm.box = "blinkreaction/boot2docker"
 
