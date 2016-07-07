@@ -1,0 +1,43 @@
+comecou as 17h11 acabou as 17h15 o download-> 4 minutos
+
+Docker Compose
+docker-compose -f /vagrant/docker-compose.yaml up -d
+
+Alterar para build o nginx
+
+Docker tag
+docker tag vagrant_nginx carloscarvalho/nginx:latest
+docker tag vagrant_nginx carloscarvalho/nginx:v2
+docker tag nginx:1.9.7 carloscarvalho/nginx:v1
+
+docker tag vagrant_node1 carloscarvalho/node:latest
+docker tag vagrant_node1 carloscarvalho/node:v1
+
+docker tag vagrant_redis carloscarvalho/redis:latest
+docker tag vagrant_redis carloscarvalho/redis:v1
+
+
+Correr docker compose com compose.yaml
+
+Alterar versoes para ver novamente a versao 1 2 e latest
+
+Docker Login
+docker login -u "carloscarvalho"
+
+Docker Push
+
+docker push carloscarvalho/nginx:v1
+docker push carloscarvalho/nginx:v2
+docker push carloscarvalho/nginx:latest
+
+docker push carloscarvalho/node:v1
+docker push carloscarvalho/node:latest
+
+
+docker push carloscarvalho/redis:v1
+docker push carloscarvalho/redis:latest
+
+fazer docker-compose -f /vagrant/compose.yaml stop e docker-compose -f /vagrant/compose.yaml rm
+
+fazer docker rmi carloscarvalho/node:v1 e docker rmi carloscarvalho/node
+
