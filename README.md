@@ -8,6 +8,13 @@
 
 docker-compose -f /vagrant/docker-compose.yaml up -d
 
+#### Run command Docker PS
+docker ps
+
+#### Run command Docker Exec
+docker exec -ti nginx bash
+Inside container do ps aux
+
 #### Change step
 Change from image to build of nginx container
 
@@ -57,5 +64,7 @@ Do docker-compose -f /vagrant/compose.yaml stop & docker-compose -f /vagrant/com
 
 #### Run command Docker compose to remove images to give example of pulling from registry
 Do docker rmi carloscarvalho/node:v1 & docker rmi carloscarvalho/node
+
+
 
 
