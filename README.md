@@ -9,7 +9,7 @@
 docker-compose -f /vagrant/docker-compose.yaml up -d
 
 #### Change step
-Change build of nginx container
+Change from image to build of nginx container
 
 #### Run command Docker tag
 
@@ -31,7 +31,7 @@ docker tag vagrant_redis carloscarvalho/redis:v1
 docker-compose -f /vagrant/compose.yaml up -d
 
 #### Change step
-Change versions to see differencess between images
+Change versions on compose.yaml to see differencess between images (Nginx default page and Nginx upstreaming to choose nodejs node)
 
 #### Run command Docker Login to auth in docker registry
 docker login -u "carloscarvalho"

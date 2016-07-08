@@ -1,8 +1,8 @@
 version: '2'
 services:
     nginx:
-        build: ./nginx
-        #image: nginx:1.9.7
+        #build: ./nginx
+        image: nginx:1.9.7
         container_name: nginx
         hostname: nginx
         environment:
