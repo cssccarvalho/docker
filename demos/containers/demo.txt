@@ -1,5 +1,3 @@
-comecou as 17h11 acabou as 17h15 o download-> 4 minutos
-
 Docker Compose
 docker-compose -f /vagrant/docker-compose.yaml up -d
 
